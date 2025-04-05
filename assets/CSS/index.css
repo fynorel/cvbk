@@ -1,0 +1,290 @@
+/* réinitialisation du navigateur */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;    
+}
+body{
+    background-color: white;
+    padding-top: 60px;
+}
+header {
+    background-color: white; /* Couleur de fond */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour démarquer le header */
+    position: relative; /* Nécessaire si vous voulez positionner des éléments à l'intérieur */
+    z-index: 999; /* Assure que le header reste au-dessus du contenu */
+}
+/* header et navbar */
+#navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(125, 138, 255);
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+#navbar .image{
+    width: 50px; /* Ajustez la taille de l'image */
+    height: 50px; /* Conserve le ratio de l'image */
+    margin-right: 20px;
+    display:flex;
+    justify-content: left; /* Espace entre l'image et le texte */
+}
+#navbar .image img{
+    clip-path: ellipse(40% 50%); /* Conserve le ratio de l'image */
+}
+#navbar ul{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a{
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#navbar ul li a:hover{
+    color: blue;
+}
+.titre1{
+    display: flex; /* Ajoute Flexbox pour un meilleur contrôle */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; 
+
+}
+.titre1 h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center; /* Centre le texte */
+}
+.titre2{
+    display: flex; /* Ajoute Flexbox pour un meilleur contrôle */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; 
+
+}
+.titre2 h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center; /* Centre le texte */
+}
+/* section Accueil */
+#accueil{
+    text-align: center;
+    padding: 20px ; 
+}   
+#accueil h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#accueil p{
+    font-size: 1rem;
+    color: black;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px; /* Limite la largeur du texte */
+}
+/* section Technologies */
+#techno h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: darkblue;
+}
+#techno ul {
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    padding: 0;
+    margin:0;
+}
+
+#techno ul li h4{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+}
+
+#techno ul li ul{
+    display : flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding:0;
+    margin: 0;
+}
+
+#techno ul li ul li{
+    text-align: left;
+    margin-bottom: 5px;;
+}
+
+/* Section Etudes */
+
+#etude{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.SoftSkill, .interet {
+    width: 20% ; 
+    text-align: center;
+      
+}
+
+.SoftSkill .interet h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: darkblue;
+}
+.formation {
+    width: 60%; /* Ajustez la largeur selon vos besoins */
+}
+
+#titre3 {
+    width: 100%;
+    
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: darkblue;
+}
+#etude .formation{
+    width: 80%;
+    margin: 0 auto ;;
+}
+#etude .formation p{
+    font-size: 1.5rem;
+    ;
+}
+#etude aside {
+    flex: 1;
+    
+    padding: 10xp;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+/* Section Expériences Professionelles */
+#ep h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: darkblue;
+}
+
+#ep .exp{
+    width: 80%;
+    margin: 0 auto ;;
+    
+}
+#ep .exp p{
+    font-size: 1.5rem;
+
+}
+/* Section Projets */
+
+
+/* Section Pied de page */
+footer{
+    height: 20%;
+    background-color: rgb(155, 165, 255);
+    position: relative; /* Nécessaire si vous voulez positionner des éléments à l'intérieur */
+    z-index: 999; /* Assure que le header reste au-dessus du contenu */
+    
+}
+#reseaux {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+#reseaux p a{
+    color: darkblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#reseaux p a:hover{
+    color: red;
+}
+.ObligationLegales{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    
+    
+}
+.ObligationLegales .copy{
+    font-size: 1rem;
+    color: red;
+}
+.ObligationLegales .ML a{
+    font-size: 1rem;
+    color: black;
+}
+.ObligationLegales .ML a:hover{
+    color: blue;
+}
+
+/* Section Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+        margin-top: 20%; /* Ajoute un espacement supérieur pour éviter que le contenu ne soit masqué par le header fixe */
+    }
+    header .titre1 h1, header .titre2 h2{
+        font-size: 2rem;
+    }
+    #navbar{
+        width : 100%;
+        text-align: center;
+    }
+    #navbar ul {
+        flex-direction: column; /* Change la direction pour les petits écrans */
+    }
+    #navbar ul li {
+        padding-left: 4px
+    }
+    .titre1 h1, .titre2 h2{
+        font-size: 2rem;
+    }
+    #techno ul {
+        flex-direction: column; /* Change la direction pour les petits écrans */
+        align-items: center; /* Centre les éléments */
+    }
+    #etude{
+        flex-direction: column; /* Change la direction pour les petits écrans */
+        align-items: center; /* Centre les éléments */
+    }
+    .SoftSkill, .interet, .formation {
+        width: 100%; /* Prend toute la largeur sur les petits écrans */
+        text-align: center;
+    }
+    #etude .formation p{
+        font-size: 1rem;
+    }
+    #ep .exp p{
+        font-size: 1rem;
+    }
+}
